@@ -124,13 +124,10 @@ public class LoadingView extends SurfaceView {
                                 drawLoadingView();
                             //释放画布
                         } catch (Exception e) {
-
                         } finally {
                             if (canvas != null)
                                 holder.unlockCanvasAndPost(canvas);
                         }
-
-
                     }
                 };
                 if (timer == null)
@@ -179,7 +176,7 @@ public class LoadingView extends SurfaceView {
    //     rightCirclePaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));
         startRadius = dip2px(15);
         minRadius=dip2px(5);
-        delta=dip2px(0.3f);
+        delta=0.5f;
     }
 
     private void drawLoadingView() {

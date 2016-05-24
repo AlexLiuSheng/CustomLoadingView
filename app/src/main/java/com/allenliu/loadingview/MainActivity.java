@@ -10,8 +10,10 @@ private LoadingView view;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         view= (LoadingView) findViewById(R.id.loadingview);
-      //  view.setBallOneColor(getResources().getColor(R.color.colorAccent));
+        view.setMinRadius(20);
         view.setMaxRadius(50);
-//        view.setBallTwoColor(getResources().getColor(R.color.colorAccent));
+        view.setBallOneColor(getResources().getColor(R.color.colorAccent));
+        view.setCenterBallColor(getResources().getColor(R.color.colorAccent));
+        view.setBallTwoColor(getResources().getColor(R.color.colorAccent));
     }
 }
